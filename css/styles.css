@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+
+  /* START OF 'TYPO INIT'  */
+  /* SIZE  */
+  --fs-default: 14px;
+  --fs-paragraph: var(--fs-default);
+  --fs-heading: calc(var(--fs-default) + 4.5rem);
+  font-size: var(--fs-paragraph);
+
+  /* WEIGHT  */
+  --fw-400: 400;
+  --fw-700: 700;
+  --fw-900: 900;
+  font-weight: var(--fw-400);
+  font-family: 'Raleway', sans-serif;
+
+  /* LINE HEIGHT  */
+  line-height: 1.5rem;
+  /* END OF 'TYPO INIT'  */
+
+
+  /* COLORS  */
+  /* PRIMARY  */
+  --clr-p-gradient1: hsl(6, 100%, 80%);
+  --clr-p-gradient2: hsl(335, 100%, 65%);
+
+  /* NEUTRAL  */
+  --clr-n-pale-blue: hsl(243, 100%, 93%);
+  --clr-n-gray-lue: hsl(229, 7%, 55%);
+  --clr-n-dark-blue: hsl(228, 56%, 26%);
+  --clr-n-black-blue: hsl(229, 57%, 11%);
+}
+
+
+body {
+  min-width: 100%;
+  background-image: url("../images/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  padding: 4rem 2rem;
+}
+
+.container__top {
+  padding: 3rem 2rem;
+  width: 90%;
+  /* margin: 4rem 1rem; */
+  background-color: var(--clr-n-dark-blue);
+  border-radius: 10px 70px 10px 10px;
+}
+
+.container__top__title {
+  padding-bottom: 1.5rem;
+}
+
+.container__top__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__top__icons--icon {
+  background-color: var(--clr-n-black-blue);
+  display: grid;
+  place-items: center;
+  border-radius: .5rem;
+  width: 50px;
+  height: 50px;
+}
