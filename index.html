@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <title>FYLO Data Storage</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>FYLO Data Storage</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="container__top">
-      <div class="container__top__title">
-        <img class="container__top__title-img" src="./images/logo.svg" alt="">
-      </div>
-      <div class="container__top__icons">
-        <div class="container__top__icons--icon"><img src="./images/icon-document.svg" alt=""></div>
-        <div class="container__top__icons--icon"><img src="./images/icon-folder.svg" alt=""></div>
-        <div class="container__top__icons--icon"><img src="./images/icon-upload.svg" alt=""> </div>
-      </div>
-    </div>
-    <div class="container__bottom">
-      <p class="container__bottom--text">You've used <strong>815 GB</strong> of your storage</p>
-      <div class="container__bottom--progbar">
-        <div>
-          <p>0 GB</p>
-          <p>1000 GB</p>
+    <body>
+        <div class="wholecard">
+            <div class="container">
+                <div class="container__top">
+                    <div class="container__top__title">
+                        <img class="container__top__title-img" src="./images/logo.svg" alt="" />
+                    </div>
+                    <div class="container__top__icons">
+                        <div class="container__top__icons--icon">
+                            <img src="./images/icon-document.svg" alt="" />
+                        </div>
+                        <div class="container__top__icons--icon">
+                            <img src="./images/icon-folder.svg" alt="" />
+                        </div>
+                        <div class="container__top__icons--icon">
+                            <img src="./images/icon-upload.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="container__bottom">
+                    <p class="container__bottom--text">
+                        You've used <strong>815 GB</strong> of your storage
+                    </p>
+                    <div class="container__bottom--progbar">
+                        <div class="container__bottom--probar-data">
+                            <p>0 GB</p>
+                            <p>1000 GB</p>
+                        </div>
+                    </div>
+                    <div class="container__bottom--dataleft">
+                        <h1>185</h1>
+                        <p>GB LEFT</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container__bottom--dataleft">185 GB LEFT
-      </div>
-    </div>
-  </div>
-</body>
-
+    </body>
 </html>
